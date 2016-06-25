@@ -1,7 +1,7 @@
 <?php
 
 
-class Especialidade {
+class Especialidades {
   
     private $id;
     private $nome;
