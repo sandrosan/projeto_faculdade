@@ -1,5 +1,6 @@
 <?php
 
+include_once '../model/Especialidades.php';
 
 class Especialidade_Control {
     
@@ -9,7 +10,9 @@ class Especialidade_Control {
     }
     
     public function listarTodos() {
-        
+     $especialidade = new Especialidades();
+      return $especialidade->listarTodasEspecialidades();
+     
     }
     
     public function buscar(){
