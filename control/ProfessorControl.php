@@ -2,8 +2,7 @@
 
 
  
-class Professor_Control {
-    
+class ProfessorControl {
     public function inserir() {
         
     }
@@ -14,17 +13,16 @@ class Professor_Control {
     
     public function buscar(){
            
-}
+    }
 
 
-public function editar(){
+    public function editar(){
     
     
-}
+    }
 
-public function deletar() {
+    public function deletar() {
     
-}
-
+    }
 
 }   
