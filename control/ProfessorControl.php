@@ -1,4 +1,5 @@
 <?php
+include_once '../model/Professor.php';
 
 
  
@@ -8,6 +9,8 @@ class ProfessorControl {
     }
     
     public function listarTodos() {
+        $professor = new Professor();
+      return $professor->listarTodasProfessores();
         
     }
     
