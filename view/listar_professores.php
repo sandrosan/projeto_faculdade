@@ -1,9 +1,9 @@
 <?php
 
 include_once '../control/ProfessorControl.php';
-$especialidadeControl = new EspecialidadeControl();
+$professorControl = new ProfessorControl();
 
-//print_r($especialidadeControl->listarTodos());
+//print_r($professorControl->listarTodos());
 
 
  
