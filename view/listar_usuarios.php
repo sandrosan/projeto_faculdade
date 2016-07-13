@@ -1,7 +1,7 @@
 <?php
 
-include_once '../control/Usuario_Control.php';
-$usuarioControl = new Usuario_Control();
+include_once '../control/UsuarioControl.php';
+$usuarioControl = new UsuarioControl();
 
 //print_r($usuarioControl->listarTodos());
 
