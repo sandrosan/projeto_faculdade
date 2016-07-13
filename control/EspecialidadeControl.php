@@ -1,33 +1,31 @@
 <?php
 
-include_once '../model/Especialidades.php';
+include_once '../model/Especialidade.php';
 
-class Especialidade_Control {
-    
-    
+class EspecialidadeControl {
     public function inserir() {
         
     }
     
     public function listarTodos() {
-     $especialidade = new Especialidades();
+     $especialidade = new Especialidade();
       return $especialidade->listarTodasEspecialidades();
      
     }
     
     public function buscar(){
            
-}
+    }
 
 
-public function editar(){
+    public function editar(){
     
     
-}
+    }
 
-public function deletar() {
+    public function deletar() {
     
-}
+    }
 
 
 }   
