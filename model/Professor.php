@@ -1,7 +1,8 @@
 <?php
+include_once '../db/Conexao.php';
 
 
-class Professore {
+class Professor {
     private $id;
     private $numero_contribuinte;
     private $nome;
@@ -57,7 +58,12 @@ class Professore {
         $this->especialidade_id = $especialidade_id;
     }
 
-
+ public function listarTodosProfessores() {
+      $sql = 'SELECT * FROM professores' ;
+      $query = Conexao::prepare($sql);
+      $query->execute();
+      return $query->fetchAll();
+    }
     
     
 }
