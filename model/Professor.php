@@ -1,7 +1,7 @@
 <?php
 
 
-class Professores {
+class Professore {
     private $id;
     private $numero_contribuinte;
     private $nome;
