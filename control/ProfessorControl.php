@@ -10,7 +10,7 @@ class ProfessorControl {
     
     public function listarTodos() {
         $professor = new Professor();
-      return $professor->listarTodasProfessores();
+      return $professor->listarTodosProfessores();
         
     }
     
