@@ -12,7 +12,7 @@ class UsuarioControl {
     }
     
     public function buscar(){
-           
+          
     }
 
 
