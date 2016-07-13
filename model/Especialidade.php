@@ -4,7 +4,7 @@ include_once '../db/Conexao.php';
 
 
 
-class Especialidades {
+class Especialidade {
   
     private $id;
     private $nome;
