@@ -16,7 +16,7 @@ $especialidadeControl = new Especialidade_Control();
 <?php
 foreach ($especialidadeControl->listarTodos() as $especialidade) {
     ?>
-}
+
     <tr>
     
     <td><?php echo $especialidade->id;?></td
