@@ -2,7 +2,7 @@
 include_once '../db/Conexao.php';
 
 
-class Usuarios {
+class Usuario {
    private $id;
    private $email;
    private $senha;

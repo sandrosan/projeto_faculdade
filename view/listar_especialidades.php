@@ -1,6 +1,6 @@
 <?php
-include_once '../control/Especialidade_Control.php';
-$especialidadeControl = new Especialidade_Control();
+include_once '../control/EspecialidadeControl.php';
+$especialidadeControl = new EspecialidadeControl();
 
 //print_r($especialidadeControl->listarTodos());
 ?>
