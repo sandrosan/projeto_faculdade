@@ -3,6 +3,9 @@ include_once '../control/EspecialidadeControl.php';
 $especialidadeControl = new EspecialidadeControl();
 
 //print_r($especialidadeControl->listarTodos());
+
+
+
 ?>
 <table>
     <tr>
