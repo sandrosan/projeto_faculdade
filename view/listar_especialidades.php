@@ -4,29 +4,21 @@ include_once '../control/EspecialidadeControl.php';
 $especialidadeControl = new EspecialidadeControl();
 
 //print_r($especialidadeControl->listarTodos());
-
-
-
 ?>
 <div class="col-sm-10 col-sm-offset-1">
        <h1>Especialidades</h1>
        <a href="" class ="pull-right btn btn-primary btn-xs">cadastrar especialidade</a>
        
-
 <table class ="table table-striped">
     <tr>
-    <th>id </th> 
-    <th>nome</th>
-    <th></th>
-    <th></th>
-    
-    </tr>
-    
+        <th>id </th> 
+        <th>nome</th>
+        <th></th>
+     </tr>
 <?php
 foreach ($especialidadeControl->listarTodos() as $especialidade) {
     ?>
-
-    <tr>
+     <tr>
     
         <td><?php echo $especialidade->id;?></td>
         <td><?php echo $especialidade->nome;?></td>
@@ -35,15 +27,12 @@ foreach ($especialidadeControl->listarTodos() as $especialidade) {
                 
                 <a href= "">editar</a>
                 |
-                <a href="">deletar<a/>
+                <a href="">deletar</a>
                    
-                
             </div>
-        <td/>
+        </td>
     </tr>
-
 <?php } ?>
-
 </table>
 </div>
 
