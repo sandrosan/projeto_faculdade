@@ -36,11 +36,21 @@ foreach ($professorControl->listarTodos() as $professor) {
     
     <td><?php echo $professor->id;?></td
     <td><?php echo $professor->nome;?></td>
+    <td>
+            <div class="pull-right">
+                
+                <a href= "">editar</a>
+                |
+                <a href="">deletar<a/>
+                    
+            </div>
+    </td>
 </tr>
 
 <?php } ?>
 
 </table>
 
+</div>
  
- ?>
+ <?php include_once '../style/footer.php';?>

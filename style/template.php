@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>projeto_faculdade</title>
 
     
     <link href="../style/css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-brand" href="#">Faculdade</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,6 +56,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastros <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Especialidade</a></li>
+            <li><a href="#">Professores</a></li>
             <li><a href="#">Usuario</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Sair</a></li>
@@ -65,3 +66,8 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+       
+       
+       
+       
+       
