@@ -1,7 +1,8 @@
 <?php
-
+include_once '../style/template.php';
 include_once '../control/ProfessorControl.php';
 $professorControl = new ProfessorControl();
+
 
 //print_r($professorControl->listarTodos());
 
@@ -17,38 +18,35 @@ $professorControl = new ProfessorControl();
 ?>
 <div class="col-sm-10 col-sm-offset-1">
        <h1>Professores</h1>
-       <a href="" class ="pull-right btn btn-primary btn-xs">cadastrar professores</a>
+       <a href="cadastrar_professores.php" class ="pull-right btn btn-primary btn-xs">
+       cadastrar professores</a>
        
 <table class ="table table-striped">
     <tr>
-    <th>id </th> 
-    <th>nome</th>
+        <th>id </th> 
+        <th>nome</th>
+        <th></th>
     
     </tr>
     
-
-
-<?php
+    <?php
 foreach ($professorControl->listarTodos() as $professor) {
     ?>
-}
-    <tr>
-    
-    <td><?php echo $professor->id;?></td
+<tr>
+    <td><?php echo $professor->id;?></td>
     <td><?php echo $professor->nome;?></td>
-    <td>
+        <td>
             <div class="pull-right">
                 
                 <a href= "">editar</a>
                 |
                 <a href="">deletar<a/>
-                    
             </div>
-    </td>
+        </td>
 </tr>
 
-<?php } ?>
-
+    <?php } ?>
+   
 </table>
 
 </div>

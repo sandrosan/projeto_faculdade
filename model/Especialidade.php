@@ -2,8 +2,6 @@
 
 include_once '../db/Conexao.php';
 
-
-
 class Especialidade {
   
     private $id;

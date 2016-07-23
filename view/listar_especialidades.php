@@ -7,7 +7,8 @@ $especialidadeControl = new EspecialidadeControl();
 ?>
 <div class="col-sm-10 col-sm-offset-1">
        <h1>Especialidades</h1>
-       <a href="" class ="pull-right btn btn-primary btn-xs">cadastrar especialidade</a>
+       <a href="cadastra_especialidades.php" class ="pull-right btn btn-primary btn-xs">
+       cadastrar especialidade</a>
        
 <table class ="table table-striped">
     <tr>
