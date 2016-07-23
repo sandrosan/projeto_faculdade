@@ -64,6 +64,13 @@ class Professor {
       $query->execute();
       return $query->fetchAll();
     }
+     public function salvar(){
+        
+        $sql = "INSERT INTO professores(nome) VALUES (:nome)";
+        $query = Conexao::prepare($sql);
+        $query->bindValue("nome",$this->getNome());
+        $query->execute();
+    }
     
     
 }

@@ -5,6 +5,11 @@ include_once '../model/Professor.php';
  
 class ProfessorControl {
     public function inserir() {
+        $nome = $_POST['nome'];
+     
+        $professor = new Professor();
+        $professor->setNome($nome);
+        $professor->salvar();
         
     }
     
