@@ -66,10 +66,18 @@ class Professor {
     }
      public function salvar(){
         
-        $sql = "INSERT INTO professores(nome) VALUES (:nome)";
-        $query = Conexao::prepare($sql);
-        $query->bindValue("nome",$this->getNome());
-        $query->execute();
+      $sql = "INSERT INTO professores 
+          (numero_contribuinte,nome , nascimento, carga_horaria, especialidade_id)"
+          . " values(:numero_contribuinte, :nome , :nascimento, :carga_horaria, :especialidade_id)" ; 
+       
+       $query = Conexao::prepare($sql);
+       $query->bindValue(":numero_contribuinte", $this->getNumero_contribuinte());
+       $query->bindValue(":nome", $this->getNome());
+       $query->bindValue(":nascimento", $this->getNascimento());
+       $query->bindValue(":carga_horaria", $this->getCarga_horaria());
+       $query->bindValue(":especialidade_id", $this->getEspecialidade_id());   
+       $query->execute();
+   
     }
     
     
