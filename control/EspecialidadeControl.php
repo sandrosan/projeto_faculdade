@@ -18,17 +18,32 @@ class EspecialidadeControl {
      
     }
     
-    public function buscar(){
+    public function buscar($id){
+     
+       $especialidade = new Especialidade();
+       $resultadoDaBusca = $especialidade->buscar($id);
+       return $resultadoDaBusca;
+        
            
     }
 
 
     public function editar(){
-    
-    
+       $especialidade = new Especialidade();
+        
+       $nome = $_POST['nome'];
+       $id = $_POST['id'];
+       
+      
+       $especialidade->setNome($nome);
+       $especialidade->atualizar($id);
+        
     }
 
     public function deletar() {
+        $especialidade = new Especialidade();
+        $id = $_GET['id'];
+        $especialidade->deletar($id);
     
     }
 

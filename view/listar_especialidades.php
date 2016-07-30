@@ -2,6 +2,10 @@
 include_once '../style/template.php';
 include_once '../control/EspecialidadeControl.php';
 $especialidadeControl = new EspecialidadeControl();
+    if(isset($_GET['id'])){
+        $especialidadeControl->deletar();
+        header("Location:listar_especialidades.php");
+    }
 
 //print_r($especialidadeControl->listarTodos());
 ?>
@@ -10,7 +14,7 @@ $especialidadeControl = new EspecialidadeControl();
        <a href="cadastra_especialidades.php" class ="pull-right btn btn-primary btn-xs">
        cadastrar especialidade</a>
        
-<table class ="table table-striped">
+<table class ="table table-hover">
     <tr>
         <th>id </th> 
         <th>nome</th>
@@ -26,9 +30,9 @@ foreach ($especialidadeControl->listarTodos() as $especialidade) {
         <td>
             <div class="pull-right">
                 
-                <a href= "">editar</a>
+               <?php echo "<a href= 'editar_especialidades.php?acao=aditar&id=".$especialidade->id."'>editar</a>"?>
                 |
-                <a href="">deletar</a>
+               <?php echo "<a href= 'listar_especialidades.php?acao=deletar&id=".$especialidade->id."'>deletar</a>"?>
                    
             </div>
         </td>
