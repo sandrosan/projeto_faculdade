@@ -1,3 +1,12 @@
+<?php session_start(); 
+include_once '../control/UsuarioControl.php';
+$user = new UsuarioControl();
+if(isset($_POST['sair'])){
+    $user->logoff();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +21,9 @@
 
     
   </head>
+ 
    <body>
+<?php if(isset($_SESSION['email'])){ ?>
        <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -59,7 +70,12 @@
             <li><a href="listar_professores.php">Professores</a></li>
             <li><a href="listar_usuarios.php">Usuario</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Sair</a></li>
+            <li><a>logado com:<?php echo $_SESSION['email'];?></a></li>
+            <li>
+                <form method="POST" class="navbar-form navbar-left"> 
+                    <input type="submit" name="sair" class="btn btn-default" value="sair"> 
+               </form> 
+            </li> 
           </ul>
         </li>
       </ul>
@@ -67,7 +83,6 @@
   </div><!-- /.container-fluid -->
 </nav>
        
-       
-       
-       
+
+<?php } ?>       
        

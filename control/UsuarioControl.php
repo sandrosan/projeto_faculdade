@@ -34,11 +34,21 @@ class UsuarioControl {
          $usuario = new Usuario();
          $quantidadeEncontradaDeUsuarios = $usuario->logar($email,$senha);
         
-         if($quantidadeEncontradaDeUsuarios > 0){ 
+         if($quantidadeEncontradaDeUsuarios > 0){
+             #session_star();
+             $_SESSION['email']=$email;
             header('Location: listar_especialidades.php'); 
          }else{ 
              header('Location: login.php'); 
          }  
-     } 
+     }
+     
+     public function logoff(){
+         if(isset($_SESSION['email'])){
+             session_destroy();
+             header('Location:login.php');
+         }
+     }
+     
       
 }
