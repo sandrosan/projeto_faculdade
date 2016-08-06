@@ -46,6 +46,17 @@ class Usuario {
       $query = Conexao::prepare($sql);
       $query->execute();
       return $query->fetchAll();  
-   }  
+   } 
+   
+   public function logar($email,$senha)
+                         
+           {
+      $sql = 'SELECT * FROM usuarios WHERE email = :email AND senha = :senha';
+      $query = Conexao::prepare($sql);
+      $query->bindValue(':email',$email);
+      $query->bindValue(':senha',$senha);
+      $query->execute();
+      return $query->rowCount();
+   } 
    
 }
