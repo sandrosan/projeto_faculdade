@@ -17,8 +17,8 @@
   <h2>Nova Especialidade </h2>
 <form method="POST">
 <label>nome da especialidade</label>
-    <input class ="form-control" name="nome" required="" >
-    <br>
+    <input class ="form-control" name="nome" required="" />
+    <br/>
     <input name="salvar" type="submit" value="salvar" class="btn btn-info btn-sm">
 
 </form>   

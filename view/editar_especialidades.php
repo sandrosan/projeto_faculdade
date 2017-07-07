@@ -20,7 +20,7 @@
          <label>nome da especialidade</label>
             <input type="hidden"name="id" Value="<?php echo $especialidade->id?>">
             <input class ="form-control" name="nome" required=""
-            Value = "<?php echo $especialidade->nome;?>">
+            Value = "<?php echo $especialidade->nome;?>"/>
             <br>
             <input name="salvar" type="submit" value="salvar" class="btn btn-info btn-sm">
 

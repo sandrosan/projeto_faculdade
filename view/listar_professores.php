@@ -25,6 +25,7 @@ $professorControl = new ProfessorControl();
     <tr>
         <th>id </th> 
         <th>nome</th>
+        <th>especialidade</th>
         <th></th>
     
     </tr>
@@ -35,6 +36,7 @@ foreach ($professorControl->listarTodos() as $professor) {
 <tr>
     <td><?php echo $professor->id;?></td>
     <td><?php echo $professor->nome;?></td>
+     <td><?php echo $professor->especialidade_id;?></td>
         <td>
             <div class="pull-right">
                 

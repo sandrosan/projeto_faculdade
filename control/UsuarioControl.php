@@ -5,6 +5,8 @@ include_once '../model/Usuario.php';
 class UsuarioControl {
     public function inserir() {
         
+        
+        
     }
     
     public function listarTodos() {

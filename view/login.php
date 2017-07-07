@@ -20,7 +20,7 @@
             <label>senha</label>
             <input class="form-control"name="senha" type="password">
             <br>
-            <input type="submit" class="btn btn-primary btn-block" value="logar" name="logar">
+            <input type="submit" class="btn btn-primary btn-block" value="logar" name="logar"/>
         </form>
     </div>
 

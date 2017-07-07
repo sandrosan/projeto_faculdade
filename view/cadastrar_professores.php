@@ -43,7 +43,7 @@
                 
          </select>
  <br>
-                 <input type="submit"  name="salvar" class="btn btn-primary">
+                 <input type="submit"  name="salvar" class="btn btn-primary"/>
             </form>
         </div>  
 

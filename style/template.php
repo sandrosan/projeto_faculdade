@@ -17,7 +17,7 @@ if(isset($_POST['sair'])){
     <title>projeto_faculdade</title>
 
     
-    <link href="../style/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../style/css/bootstrap.min.css" rel="stylesheet"><!--fazer um link do style-->
 
     
   </head>
